@@ -1,0 +1,28 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <div class="topnav">
+      <a href="/">Home</a>
+      <a class="active" href="create-users">Delete user</a>
+  
+    </div>
+    <div class="form-add-new">
+      <form action="/delete-user-confirm/<%= user.id %>" method="get">
+        <fieldset>
+          <legend>Are you sure to delete this user?</legend>
+          <div class="input-group">
+            <span>Email: </span><span><%= user.email %></span>
+          </div>
+          <div>
+            <button>Confirm</button>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>

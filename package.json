@@ -1,0 +1,28 @@
+{
+  "name": "learn_nodejs",
+  "version": "1.0.0",
+  "description": "Learn nodejs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./src/server.js"
+  },
+  "author": "tien",
+  "license": "ISC",
+  "dependencies": {
+    "api-query-params": "^5.4.0",
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "express-fileupload": "^1.5.1",
+    "joi": "^17.13.3",
+    "mongodb": "^6.8.0",
+    "mongoose": "^8.4.4",
+    "mongoose-delete": "^1.0.2",
+    "multer": "^1.4.5-lts.1",
+    "mysql2": "^3.9.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
